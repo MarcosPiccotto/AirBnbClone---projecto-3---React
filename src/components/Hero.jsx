@@ -2,7 +2,7 @@ import PhotoGrid from "../assets/photo-grid.png";
 
 export default function Hero() {
     return (
-        <section>
+        <section className="hero">
             <img className="photo-grid" src={PhotoGrid} alt="photo grid" />
             <div className="hero-content">
                 <h1>Online Experiences</h1>

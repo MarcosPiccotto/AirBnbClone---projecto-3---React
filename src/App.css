@@ -1,68 +1,135 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    /* background-image: url(./assets/background.jpg); */
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
-  padding: 2em;
+    padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+    color: #888;
 }
 
-nav{
-  /* height: 70px; */
-  display: flex;
-  padding: 20px 36px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+nav {
+    /* height: 70px; */
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.airlogo{
-  max-width: 100px;
+.airlogo {
+    max-width: 100px;
 }
 
-.hero-content{
-  color: #000000;
-  text-align: left;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+.hero-content {
+    color: #000000;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .hero-content > p {
-  margin-bottom: -2%;
+    margin-top: auto;
 }
 
-.photo-grid{
-  max-width: 35%;
+.photo-grid {
+    max-width: 35%;
+}
+
+.card {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    background-color: white;
+    position: relative;
+    width: 160px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-photo {
+    width: 170px;
+    height: 230px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+.bold {
+    font-weight: bold;
+}
+.gray {
+    color: #888;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-price {
+    margin-top: auto;
+}
+
+.hero {
+    margin-top: 5%;
+}
+
+.card-title {
+    max-width: 160px;
+}
+
+.card-badge {
+    position: absolute;
+    /* option 1 
+	top: 6px;
+    left: 6px;
+	*/
+    /* option 2 */
+    top: 31px;
+    left: 45px;
+
+    background-color: rgb(226, 223, 223);
+    padding: 1px 3px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
 }
